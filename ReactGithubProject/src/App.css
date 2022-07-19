@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+body {
+  font-family: 'Inconsolata', monospace;
+}
+
+a {
+  text-decoration: none !important;
+  color: white;
+}
+
+a:hover {
+  color: #fff;
+}
+
+h4 a {
+  color: #111 !important;
+}
+
+h4 a:hover {
+  color: rgb(110, 6, 49) !important;
+}
+
+.userGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  margin: '1rem';
+}
+
+@media screen and (max-width: 980px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  .userGrid {
+
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+  .badge {
+    display: block !important;
+  }
+
+  .badge-card {
+    display: block;
+  }
+
+  .headerLogo {
+    font-size: 1rem;
+    padding-top: 0.25rem;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .badge-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .headerLogo {
+    font-size: 1.2rem;
+  }
+}
+
+.btn-light {
+  border: 1px solid rgb(202, 196, 196);
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.4rem;
+}
+
+.badge {
+  margin-left: 0.2rem;
+}
+
+.repo-item {
+  margin: .5rem 0;
+}
